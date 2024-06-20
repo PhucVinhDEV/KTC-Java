@@ -10,7 +10,7 @@ public class FindKeyWord {
         String inputString = scanner.nextLine();
         return inputString;
     }
-    static Character findkey(String key){
+    static Character Solution1(String key){
         HashMap<Character, Integer> charCount = new HashMap<>();
 
         // Duyệt qua chuỗi key và đếm số lần xuất hiện của mỗi ký tự
@@ -37,11 +37,38 @@ public class FindKeyWord {
         return '\0'; // Hoặc
     }
 //
+    static Character Solution2(String key){
+
+        int index = -1;
+        char fnc = ' ';
+
+        if(key.length()==0){
+            System.out.println("EMPTY STRING");
+        }
+
+        for (char i : key.toCharArray()) {
+            if (key.indexOf(i) == key.lastIndexOf(i)) {
+                fnc = i;
+                break;
+            }
+            else {
+                index += 1;
+            }
+        }
+        if (index == key.length()-1) {
+            System.out.println("All characters are repeating");
+        }
+        else {
+            System.out.println("The first non repeated characted in String is :" + fnc);
+        }
+        return fnc;
+    }
     public static void main(String[] args) {
 
 //        "gibblegabbler"
         String input = setInput();
         System.out.println("The given string is: "+input);
-        System.out.println("The first non repeated characted in String is :" + findkey(input));
+        System.out.println("The first non repeated characted in String is :" + Solution1(input));
+        Solution2(input);
     }
 }
