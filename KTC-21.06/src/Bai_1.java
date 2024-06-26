@@ -17,5 +17,11 @@ public class Bai_1 {
         return res;
     }
 
+    public int solution2(List<Integer> list) {
+        int[] res = {0}; // Sử dụng mảng để lưu trữ kết quả, vì biến bên trong lambda phải là final hoặc effectively final
+       list.stream().distinct().forEach(t -> res[0]+=t);
+       return res[0];
+    }
+
 
 }

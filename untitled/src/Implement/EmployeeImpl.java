@@ -114,6 +114,7 @@ public class EmployeeImpl implements EmplyeeService {
                         //setDepartment in Employee
                         if (index >= 0 && index < company.getListDepartments().size()) {
                             e.setDepartment(company.getListDepartments().get(index));
+//                            company.getListDepartments().get(index).getListEmployee().add(e); errorr
                         } else {
                             System.out.println("Số thứ tự không hợp lệ. Không thay đổi phòng ban.");
                         }
@@ -161,7 +162,7 @@ public class EmployeeImpl implements EmplyeeService {
     @Override
     public void prinfDetailEmployee(Company company) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập mã nhân viên cần xóa !");
+        System.out.println("Nhập mã nhân viên cần xem !");
         String maNV = sc.nextLine();
         for (Department d:company.getListDepartments()){
             for (Employee e : d.getListEmployee()){
