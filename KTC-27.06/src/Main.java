@@ -76,18 +76,35 @@ public class Main {
         return num;
     }
     public static void main(String[] args) {
-        int[] arr = { 0, 0, 1, 0, 3, 0, 5, 0, 6 };
-        int[] arr1 = BubbleSort(arr);
-        Arrays.stream(arr1).forEach(System.out::print);
-        System.out.println();
-        int[] arr2 = moveZeroToEnd(arr);
-        Arrays.stream(arr2).forEach(System.out::print);
-        System.out.println();
-        System.out.println(checkdigit(1500000000));
-        System.out.println(checkFristNumber(-357));
-        System.out.println(checkFristNumber2(-35));
+//        int[] arr = { 0, 0, 1, 0, 3, 0, 5, 0, 6 };
+//        int[] arr1 = BubbleSort(arr);
+//        Arrays.stream(arr1).forEach(System.out::print);
+//        System.out.println();
+//        int[] arr2 = moveZeroToEnd(arr);
+//        Arrays.stream(arr2).forEach(System.out::print);
+//        System.out.println();
+//        System.out.println(checkdigit(1500000000));
+//        System.out.println(checkFristNumber(-357));
+//        System.out.println(checkFristNumber2(-35));
 
 //        ArrayList<String> list = new ArrayList<>();
 //        System.out.println(Arrays.toString(list.toArray()));
+
+        // Khởi tạo StringBuilder với dung lượng ban đầu là 4
+        StringBuilder sb = new StringBuilder(4);
+
+        // Thêm 6 ký tự 'a' vào StringBuilder
+        for (int i = 0; i < 6; i++) {
+            sb.append("a");
+        }
+
+        // In ra nội dung của StringBuilder
+        System.out.println(sb);  // Kết quả: aaaaaa
+
+        // In ra dung lượng hiện tại của StringBuilder
+        System.out.println("Capacity: " + sb.capacity());  // Dung lượng hiện tại
+
+        // In ra chiều dài của chuỗi hiện tại trong StringBuilder
+        System.out.println("Length: " + sb.length());  // Chiều dài của chuỗi hiện tại
     }
 }
