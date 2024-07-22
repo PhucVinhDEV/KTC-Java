@@ -1,0 +1,11 @@
+Thread:
+    Kế thừa từ Thread lớp.
+    Không thể kế thừa từ lớp khác.
+    Không tách biệt rõ ràng nhiệm vụ và luồng.
+    Không tương thích trực tiếp với ExecutorService.
+
+Runnable:
+    Triển khai giao diện Runnable.
+    Có thể kế thừa từ lớp khác và triển khai nhiều giao diện.
+    Tách biệt rõ ràng nhiệm vụ và luồng.
+    Tương thích tốt với ExecutorService và các tiện ích đồng thời.

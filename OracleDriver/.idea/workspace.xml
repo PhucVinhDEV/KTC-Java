@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f2cbcc8-6b79-438b-b484-851654deeca5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../DataStructures/src/List/LinkedListDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataStructures/src/List/ListMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataStructures/src/Queue/QueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataStructures/src/Stack/StackMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example_09-07/src/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Example_09-07/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/Students.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/src/main/java/org/example/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/src/main/java/org/example/Students.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/src/main/java/org/example/WrirePDFexample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/src/main/java/org/example/utils/ExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/src/main/java/org/example/utils/PDFUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/src/main/java/org/example/utils/TxtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExcelFile/src/main/java/org/example/utils/WordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileHanding/New2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileHanding/New3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileHanding/src/FileWriterReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FileHanding/src/FoStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algorithms/src/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algorithms/src/QuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoOracle/src/main/java/com/example/demoOracle/Entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KTC-20.06/src/Bai1/FindKeyWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KTC-20.06/src/Bai1/FindKeyWord.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2jMLHgRSs8aNw6px9hI9CF06Lu7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f2cbcc8-6b79-438b-b484-851654deeca5" name="Changes" comment="" />
+      <created>1721191913599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721191913599</updated>
+      <workItem from="1721191914721" duration="716000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -65,10 +65,12 @@ public class FindKeyWord {
     }
     public static void main(String[] args) {
 
-//        "gibblegabbler"
+//        "giiwlegabbler"
         String input = setInput();
         System.out.println("The given string is: "+input);
         System.out.println("The first non repeated characted in String is :" + Solution1(input));
         Solution2(input);
+
+
     }
 }

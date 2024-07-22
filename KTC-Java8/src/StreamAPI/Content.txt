@@ -1,0 +1,46 @@
+    Streams trong Java, được giới thiệu từ Java 8, cung cấp một cách mạnh mẽ
+và biểu đạt để xử lý các tập hợp dữ liệu. Chúng hỗ trợ các thao tác như lọc, ánh xạ, và tổng hợp,
+giúp viết mã dễ đọc và hiệu quả hơn.
+
+Stream là gì?
+Stream trong Java là một chuỗi các phần tử hỗ trợ các thao tác tổng hợp tuần tự và song song.
+Streams có thể được tạo từ nhiều nguồn dữ liệu khác nhau, đặc biệt là các bộ sưu tập như danh sách hoặc tập hợp.
+
+
+Các đặc điểm chính của Streams:
+      *   Không phải là cấu trúc dữ liệu: Streams không lưu trữ các phần tử. Thay vào đó, chúng chuyển tải
+       các phần tử từ một nguồn như bộ sưu tập, qua một chuỗi các thao tác.
+      *   Tính chất hàm: Một thao tác trên stream tạo ra một kết quả, nhưng không làm thay đổi nguồn của nó.
+      *   Trì hoãn thực thi: Nhiều thao tác trên stream là trì hoãn, nghĩa là chúng không được thực thi cho đến
+      khi một kết quả thực sự cần thiết.
+      *   Có thể không giới hạn: Streams có thể giới hạn hoặc không giới hạn, tùy thuộc vào nguồn.
+      *   Chỉ sử dụng một lần: Một stream chỉ có thể được duyệt qua một lần.
+
+Cac loai Stream:
+        Streams of Objects: Dành cho các đối tượng thông thường.
+        Primitive Streams: Dành riêng cho các kiểu dữ liệu nguyên thủy (IntStream, LongStream, DoubleStream).
+        Parallel Streams: Xử lý song song.
+        File Streams: Đọc dữ liệu từ tệp tin.
+        Streams from Arrays: Tạo stream từ mảng.
+        Streams from Collections: Tạo stream từ các Collection như List, Set, Map.
+        Infinite Streams: Tạo stream từ các nguồn vô hạn
+
+
+Thao tác trung gian
+Các thao tác này trả về một stream mới và trì hoãn thực thi,
+nghĩa là chúng không được thực thi cho đến khi một thao tác kết thúc được gọi.
+
+Thao tác trung gian:
+    -   Filter: Lọc các phần tử dựa trên một điều kiện.
+        < Stream<String> filteredStream = stream.filter(s -> s.startsWith("a"));  />
+    -   Map: Chuyển đổi mỗi phần tử sang một dạng khác.
+        < Stream<String> upperCaseStream = stream.map(String::toUpperCase)  />
+    -   Sorted: Sắp xếp các phần tử của stream.
+        < Stream<String> sortedStream = stream.sorted()  />
+Thao tác kết thúc:
+    -   ForEach: Thực hiện một hành động cho mỗi phần tử.
+        < stream.forEach(System.out::println); />
+    -   Collect: Thu thập các phần tử của stream vào một bộ sưu tập hoặc dạng khác.
+        < List<String> list = stream.collect(Collectors.toList());  />
+    -   Reduce: Giảm các phần tử thành một giá trị duy nhất.
+        < Optional<String> concatenated = stream.reduce((s1, s2) -> s1 + s2);  />
