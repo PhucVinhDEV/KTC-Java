@@ -34,5 +34,8 @@ public class Main {
 //        }
         Menu menu = new Menu();
         menu.MainMenu();
+
+        String wew = new String();
+        wew.length()
     }
 }
