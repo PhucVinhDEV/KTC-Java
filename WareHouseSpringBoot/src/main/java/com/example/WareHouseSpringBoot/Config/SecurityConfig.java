@@ -29,6 +29,9 @@ public class SecurityConfig {
             ,"/auth/logout","/auth/instrospec","/auth/refesh",
             "/auth/outbound/authentication","/users/Register"
     };
+    // phai dc tat truoc khi public Error *********************************
+    private final String[] PUBLIC_SWAGGER = {"/swagger-ui/*","/swagger-ui-custom.html"
+            , "/v3/api-docs/*", "/api-docs/*","/api-docs"};
     private final String[] GET_PUBLIC_ENDPONIT = {"/api/user"};
 
     @Value("${jwt.secretKey}")
@@ -40,8 +43,9 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         //Config endponit Authentication
         http.authorizeHttpRequests(request -> request
-                   .requestMatchers(HttpMethod.POST,PUBLIC_ENDPONIT)
-                   .permitAll().anyRequest().authenticated());
+                   .requestMatchers(HttpMethod.POST,PUBLIC_ENDPONIT).permitAll()
+                .requestMatchers(PUBLIC_SWAGGER).permitAll()
+                .anyRequest().authenticated());
 
         //Config oauth2
         http.oauth2ResourceServer(
